@@ -1,0 +1,40 @@
+/* Código de explicação */
+/* CSS */
+/* Folha de estilos */
+
+/* Sintaxe do CSS
+ tipo de seletor propriedade: valor; */
+
+ /* seletor de classe */
+
+ .topo {
+    background-color: #f00;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+ }
+
+ /* seletor de tag e/ou elemento */
+
+ header {
+    background-color: black;
+    color: #ccc;
+    font-weight: 900;
+    font-size: 32px;
+ }
+
+ /* seletor de id */
+ /* o id precisa ser único dentro de um arquivo HTML */
+
+ #formId {
+    width: 100px;
+    border: #fcf;
+    border-radius: 1px solid #000;
+ }
+
+ /* seletor agrupado */
+ h1, h2, h3 {
+    color: #ffc;
+ }
+
+ 

@@ -1,0 +1,80 @@
+
+section {
+    max-width: 90%;
+    margin: auto;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #363636;
+    background-color: 	#FFFAFA;
+}
+
+header {
+    max-width: 100%;
+    background-color: black;
+    color: #fff;
+    height: auto;
+    padding: 2%;
+}
+
+nav {
+    max-width: 100%;
+    background-color: #363636;  
+    padding: 2%;  
+
+}
+
+.menu a {
+    color: #f00;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color:#fa0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main {
+    max-width: 100%;
+    background-color: beige;
+    font-size: 14px;
+    padding: 2%;
+    float: right;
+}
+
+/* pseudo-elemento */
+article p:first-of-type {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    clear: both;
+}
+
+ul li::before {
+    content: "->";
+    color: #C71585;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+ul.checklist li::before {
+    content: "==";
+    margin-right: 8px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #f00;
+    margin-top: 5px;
+}

@@ -3,28 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/estilo.css" rel="stylesheet" />
     <title>Aula 01 - HTML</title>
+    <style>
+      /* declaração incorporada */
+      .title {
+        color: #ccc;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif;
+      }
+    </style>
   </head>
   <body>
+    <header><h1>Topo do site</h1></header>
     <section>
-      <header><h1>Topo do site</h1></header>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="galeria.html">Galeria de Imagens</a>
-        <a href="https://google.com.br" target="_blank">Pesquisar</a>
-
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="galeria.html">Galeria de Imagens</a>
+          <a href="https://google.com.br" target="_blank">Pesquisar</a>
+        </div>
       </nav>
-      <aside>Barra Lateral</aside>     
+      <aside>
+        <!-- declaração css inline -->
+        <p style="color: #f00; font-size: 20px">Barra Lateral</p>
+      </aside>
       <main>
-        Parte principal
+        <p class="title">Elemento Principal</p>
         <h2>Elementos Semânticos</h2>
         <hr />
         <h3>Texto em destaque</h3>
         <section>
-          <article>
+          <div>
             Conteúdo com mais texto
             <br />
-            <div>Este é um container em bloco</div>
+            <div style="color: #00008B; font-size: 42px;">Este é um container em bloco</div>
             <br />
             <span>Este é um container inline</span>
             <p>Parágrafo</p>
@@ -43,10 +63,21 @@
               <li>Dois</li>
               <li>Três</li>
               <li>Quatro</li>
-            </ol>            
-          </article>
-         
+            </ol>
+          </div>
         </section>
+        <article>
+            <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quas
+          excepturi odit placeat officiis totam consequuntur numquam amet
+          obcaecati pariatur, minima voluptatibus tenetur quod aliquid nulla
+          illo sint nobis cupiditate.</p>
+            <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quas
+          excepturi odit placeat officiis totam consequuntur numquam amet
+          obcaecati pariatur, minima voluptatibus tenetur quod aliquid nulla
+          illo sint nobis cupiditate.</p>
+        </article>
       </main>
       <footer>Rodapé</footer>
     </section>
